@@ -23,7 +23,31 @@ public class Main {
                 new CompanyNameFieldCheck(),
                 new DescriptionFieldCheck(),
                 new AllFieldsCheck(),
-                new NotSupportedFieldCheck()
+                new NotSupportedFieldCheck(),
+                new BadStringCheck(),
+                new BadSymbolCheck(),
+                new CodingCheck(),
+                new CRLFStringCheck(),
+                new DecisionCheck(),
+                new DigitsCheck(),
+                new EmptyStringCheck(),
+                new EOLCheck(),
+                new FirstLastSpaceCheck(),
+                new HTMLInjectionCheck(),
+                new Long100ByteCheck(),
+                new Long255ByteCheck(),
+                new Long256ByteCheck(),
+                new Long257ByteClass(),
+                new Long1024ByteCheck(),
+                new Long2000ByteCheck(),
+                new Long2048ByteCheck(),
+                new OneSpaceCheck(),
+                new RussianLettersCheck(),
+                new SpaceStringCheck(),
+                new SpecialCharsCheck(),
+                new SQLInjectionCheck(),
+                new UTFCheck(),
+                new XSSInjectionCheck()
         );
 
         tests.forEach(test -> test.test());
