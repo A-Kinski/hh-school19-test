@@ -3,8 +3,7 @@ package com.company.tests;
 public class EOLCheck extends Common {
     public void test() {
         try {
-            //TODO eol in java
-            String testString = EOL;
+            String testString = "Java\n\rPython";
 
             if (super.testString(testString)) {
                 printResult("EOL String Check successful");

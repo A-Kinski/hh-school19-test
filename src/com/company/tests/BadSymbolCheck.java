@@ -3,8 +3,7 @@ package com.company.tests;
 public class BadSymbolCheck extends Common {
     public void test() {
         try {
-            //TODO bad symbol
-            String testString = "";
+            String testString = "♣ ☺ ♂";
 
             if (super.testString(testString)) {
                 printResult("Bad Symbol Check successful");

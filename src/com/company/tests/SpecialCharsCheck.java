@@ -3,7 +3,7 @@ package com.company.tests;
 public class SpecialCharsCheck extends Common {
     public void test() {
         try {
-            String testString = "\{}/*-+=()<>`~";
+            String testString = "\\{}/*-+=()<>`~";
 
             if (super.testString(testString)) {
                 printResult("Special Chars Check successful");

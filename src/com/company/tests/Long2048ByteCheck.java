@@ -1,12 +1,17 @@
 package com.company.tests;
 
+import java.util.Random;
+
 public class Long2048ByteCheck extends Common {
     public void test() {
         try {
-            //TODO 2048 byte string
-            String testString = "";
+            StringBuilder testString = new StringBuilder();
+            Random randomNumberGenerator = new Random();
+            for (int i = 0; i < 2048; i++) {
+                testString.append((char) randomNumberGenerator.nextInt(26));
+            }
 
-            if (super.testString(testString)) {
+            if (super.testString(testString.toString())) {
                 printResult("2048 Byte String Check successful");
             } else {
                 printResult("2048 Byte String Check failed");

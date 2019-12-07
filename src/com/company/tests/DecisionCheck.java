@@ -3,8 +3,7 @@ package com.company.tests;
 public class DecisionCheck extends Common {
     public void test() {
         try {
-            //TODO string with decision
-            String testString = "";
+            String testString = "Java;Python,C++.Pascal:Erlang\u0009Lisp";
 
             if (super.testString(testString)) {
                 printResult("Decision String Check successful");

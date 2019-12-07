@@ -3,8 +3,7 @@ package com.company.tests;
 public class XSSInjectionCheck extends Common {
     public void test() {
         try {
-            //TODO XSS injection
-            String injectionString = "";
+            String injectionString = "<input onclick=\"javascript:alert('xss');\">";
 
             if (super.testInjection(injectionString)) {
                 printResult("XSS Injection Check successful");

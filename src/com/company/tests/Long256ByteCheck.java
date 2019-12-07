@@ -1,12 +1,17 @@
 package com.company.tests;
 
+import java.util.Random;
+
 public class Long256ByteCheck extends Common {
     public void test() {
         try {
-            //TODO 256 byte string
-            String testString = "";
+            StringBuilder testString = new StringBuilder();
+            Random randomNumberGenerator = new Random();
+            for (int i = 0; i < 256; i++) {
+                testString.append((char) randomNumberGenerator.nextInt(26));
+            }
 
-            if (super.testString(testString)) {
+            if (super.testString(testString.toString())) {
                 printResult("256 Byte String Check successful");
             } else {
                 printResult("256 Byte String Check failed");

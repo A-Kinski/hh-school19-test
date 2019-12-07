@@ -3,8 +3,7 @@ package com.company.tests;
 public class UTFCheck extends Common {
     public void test() {
         try {
-            //TODO utf symbols
-            String testString = "";
+            String testString = "àáâãäåçèéêëìíîðñòôõöö";
 
             if (super.testString(testString)) {
                 printResult("UTF String Check successful");

@@ -3,8 +3,7 @@ package com.company.tests;
 public class HTMLInjectionCheck extends Common {
     public void test() {
         try {
-            //TODO HTML injection
-            String injectionString = "";
+            String injectionString = "<input id=\"html_injection\"></input>";
 
             if (super.testInjection(injectionString)) {
                 printResult("HTML Injection Check successful");

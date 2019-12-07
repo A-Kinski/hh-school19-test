@@ -3,8 +3,7 @@ package com.company.tests;
 public class SQLInjectionCheck extends Common {
     public void test() {
         try {
-            //TODO SQL injection
-            String injectionString = "";
+            String injectionString = "' OR '1'='1";
 
             if (super.testInjection(injectionString)) {
                 printResult("SQL Injection Check successful");

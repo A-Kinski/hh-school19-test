@@ -3,8 +3,7 @@ package com.company.tests;
 public class BadStringCheck extends Common {
     public void test() {
         try {
-            //TODO bad string
-            String testString = "";
+            String testString = "\"[|]'~<!--@/*$%^&#*/()?>,.*/\\";
 
             if (super.testString(testString)) {
                 printResult("Bad String Check successful");

@@ -34,7 +34,7 @@ public class Main {
                 new EOLCheck(),
                 new FirstLastSpaceCheck(),
                 new HTMLInjectionCheck(),
-                new Long100ByteCheck(),
+                new Long1000ByteCheck(),
                 new Long255ByteCheck(),
                 new Long256ByteCheck(),
                 new Long257ByteClass(),
